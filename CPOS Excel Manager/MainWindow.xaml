@@ -1,0 +1,30 @@
+﻿<Window x:Class="CPOS_Excel_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPOS_Excel_Manager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+   
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        
+        <ContentControl Content="{Binding SelectedViewModel}"/>
+
+        <TextBlock Grid.Row ="1" Style="{StaticResource TextBlockStyle}" FontWeight="Medium" Name="TitleText">Sign in to your Outlook account</TextBlock>
+        <Button Grid.Row="2" Style="{StaticResource ExpandGrid}" Margin="10" Width="200" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold"  Foreground="White" 
+                Content="Sign In" Command="{Binding UpdateViewCommand}" CommandParameter="Home"/>
+        <Button Grid.Row="3" Style="{StaticResource ExpandGrid}" Margin="15" Height="35" Width="200" 
+                Content="Account" Command="{Binding UpdateViewCommand}" CommandParameter="Account"/>
+
+    </Grid>
+</Window>

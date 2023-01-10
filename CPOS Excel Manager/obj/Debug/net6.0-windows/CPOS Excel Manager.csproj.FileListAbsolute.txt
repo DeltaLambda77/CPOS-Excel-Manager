@@ -1,0 +1,27 @@
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\CPOS Excel Manager.exe
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\CPOS Excel Manager.deps.json
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\CPOS Excel Manager.runtimeconfig.json
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\CPOS Excel Manager.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\CPOS Excel Manager.pdb
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.csproj.AssemblyReference.cache
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\MainWindow.g.cs
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\Views\AccountView.g.cs
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\Views\HomeView.g.cs
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\App.g.cs
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager_MarkupCompile.cache
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager_MarkupCompile.lref
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\MainWindow.baml
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\Views\AccountView.baml
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\Views\HomeView.baml
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.g.resources
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.GeneratedMSBuildEditorConfig.editorconfig
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.AssemblyInfoInputs.cache
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.AssemblyInfo.cs
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.csproj.CoreCompileInputs.cache
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\refint\CPOS Excel Manager.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.pdb
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.genruntimeconfig.cache
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\ref\CPOS Excel Manager.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\App.baml
