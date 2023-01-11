@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CPOS_Excel_Manager.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

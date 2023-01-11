@@ -3,10 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewmodels="clr-namespace:CPOS_Excel_Manager.ViewModels"
+        xmlns:views="clr-namespace:CPOS_Excel_Manager.Views"
         xmlns:local="clr-namespace:CPOS_Excel_Manager"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -16,18 +17,27 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <ContentControl Content="{Binding SelectedViewModel}"/>
+        <ContentControl Content="{Binding CurrentViewModel}">
+            <ContentControl.Resources>
+                <DataTemplate DataType="{x:Type viewmodels:HomeViewModel}">
+                    <views:HomeView />
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type viewmodels:AccountViewModel}">
+                    <views:AccountView />
+                </DataTemplate>
+            </ContentControl.Resources>
+        </ContentControl>
 
         <TextBlock Grid.Row ="1" Style="{StaticResource TextBlockStyle}" FontWeight="Medium" Name="TitleText">Sign in to your Outlook account</TextBlock>
 
-        <StackPanel Grid.Row="2" Orientation="Vertical">
-            <StackPanel Name="EmailField" Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="15">
+            <StackPanel Name="EmailField" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
                 <Label  Width="200" Height="25">Your Outlook Email:</Label>
-                <TextBox Width="200" Height="25" Margin="10" VerticalContentAlignment="Center"></TextBox>
+                <TextBox Width="200" Height="25" VerticalContentAlignment="Center"></TextBox>
             </StackPanel>
-            <StackPanel Name="PasswordField" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Name="PasswordField" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
                 <Label Width="200" Height="25">Your Outlook Password:</Label>
-                <PasswordBox Width="200" Height="25" Margin="10" HorizontalAlignment="Left" VerticalContentAlignment="Center">
+                <PasswordBox Width="200" Height="25" HorizontalAlignment="Left" VerticalContentAlignment="Center">
                     <PasswordBox.Style>
                         <Style TargetType="{x:Type PasswordBox}">
                             <Style.Resources>

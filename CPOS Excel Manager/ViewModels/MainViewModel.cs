@@ -1,4 +1,5 @@
 ﻿using CPOS_Excel_Manager.Commands;
+using CPOS_Excel_Manager.Stores;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,25 +9,21 @@ using System.Windows.Input;
 
 namespace CPOS_Excel_Manager.ViewModels
 {
-    public class MainViewModel : BaseViewModel
+    public class MainViewModel : ViewModelBase
     {
-        private BaseViewModel _selectedViewModel;
+        private readonly NavigationStore _navigationStore;
+        public ViewModelBase CurrentViewModel => _navigationStore.CurrentViewModel;
 
-        public BaseViewModel SelectedViewModel
+        public MainViewModel(NavigationStore navigationStore)
         {
-            get { return _selectedViewModel; }
-            set 
-            { 
-                _selectedViewModel = value;
-                OnPropertyChanged(nameof(SelectedViewModel));
-            }
+            _navigationStore = navigationStore;
+
+            _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
         }
 
-        public ICommand UpdateViewCommand { get; set; }
-
-        public MainViewModel()
+        private void OnCurrentViewModelChanged()
         {
-            UpdateViewCommand = new UpdateViewCommand(this);
+            OnPropertyChanged(nameof(CurrentViewModel));
         }
     }
 }

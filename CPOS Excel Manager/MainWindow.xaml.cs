@@ -25,8 +25,6 @@ namespace CPOS_Excel_Manager
         public MainWindow()
         {
             InitializeComponent();
-
-            DataContext = new MainViewModel();
         }
     }
 }
