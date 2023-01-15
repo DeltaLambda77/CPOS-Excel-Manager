@@ -7,6 +7,68 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="White">
     <Grid>
-        <Label FontSize="36" HorizontalAlignment="Center" Content="Home"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row ="1" Style="{StaticResource TextBlockStyle}" FontWeight="Medium" Name="TitleText">Sign in to your Outlook account</TextBlock>
+
+        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="15">
+            <StackPanel Name="EmailField" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Label Width="200" Height="25">Your Outlook Email:</Label>
+                <TextBox Name="Email_TextBox" Width="200" Height="25" VerticalContentAlignment="Center" Text="{Binding Path=LoginEmail, Mode=TwoWay}"/>
+            </StackPanel>
+            <StackPanel Name="PasswordField" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Label Width="200" Height="25">Your Outlook Password:</Label>
+                <PasswordBox Name="Password_TextBox" Width="200" Height="25" VerticalContentAlignment="Center">
+                    <PasswordBox.Style>
+                        <Style TargetType="{x:Type PasswordBox}">
+                            <Style.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5" />
+                                </Style>
+                            </Style.Resources>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type PasswordBox}">
+                                        <Border x:Name="border" CornerRadius="5" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsEnabled" Value="false">
+                                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                                            </Trigger>
+                                            <Trigger Property="IsMouseOver" Value="true">
+                                                <Setter Property="BorderBrush" TargetName="border" Value="#FF7EB4EA"/>
+                                            </Trigger>
+                                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                                <Setter Property="BorderBrush" TargetName="border" Value="#FF569DE5"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <MultiTrigger>
+                                    <MultiTrigger.Conditions>
+                                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                                        <Condition Property="IsSelectionActive" Value="false"/>
+                                    </MultiTrigger.Conditions>
+                                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                                </MultiTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </PasswordBox.Style>
+                </PasswordBox>
+            </StackPanel>
+        </StackPanel>
+
+        <Button x:Name="SignInButton" Grid.Row="3" Style="{StaticResource ExpandGrid}" Margin="10" Width="200" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold"  Foreground="White" 
+                Content="Sign In" Command="{Binding NavigateAccountCommand}" CommandParameter="Account" Click="SignInButton_Click"/>
+
     </Grid>
 </UserControl>

@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:CPOS_Excel_Manager"
              xmlns:views="clr-namespace:CPOS_Excel_Manager.Views"
-             xmlns:viewmodels="clr-namespace:CPOS_Excel_Manager.ViewModels"
-             StartupUri="MainWindow.xaml">
+             xmlns:viewmodels="clr-namespace:CPOS_Excel_Manager.ViewModels">
     <Application.Resources>
         <DataTemplate DataType="{x:Type viewmodels:HomeViewModel}">
             <views:HomeView/>
@@ -12,8 +11,9 @@
         <DataTemplate DataType="{x:Type viewmodels:AccountViewModel}">
             <views:AccountView/>
         </DataTemplate>
-
-
+        <DataTemplate DataType="{x:Type viewmodels:PrintViewModel}">
+            <views:PrintView/>
+        </DataTemplate>
 
         <Style x:Key="ExpandGrid" TargetType="Button">
             <Setter Property="Template">
@@ -77,5 +77,6 @@
             <Setter Property="FontFamily" Value="Segoe UI" />
             <Setter Property="FontSize" Value="24" />
         </Style>
+
     </Application.Resources>
 </Application>

@@ -20,7 +20,7 @@ namespace CPOS_Excel_Manager
             
             NavigationStore navigationStore = new NavigationStore();
 
-            navigationStore.CurrentViewModel = new AccountViewModel(navigationStore);
+            navigationStore.CurrentViewModel = new HomeViewModel(navigationStore);
 
             MainWindow = new MainWindow()
             {

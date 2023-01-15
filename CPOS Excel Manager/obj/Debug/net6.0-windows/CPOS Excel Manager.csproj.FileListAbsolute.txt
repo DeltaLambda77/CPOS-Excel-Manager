@@ -25,3 +25,5 @@ G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-
 G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\ref\CPOS Excel Manager.dll
 G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\App.baml
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\Views\PrintView.g.cs
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\Views\PrintView.baml

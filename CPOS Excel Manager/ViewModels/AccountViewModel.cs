@@ -11,13 +11,11 @@ namespace CPOS_Excel_Manager.ViewModels
 {
     public class AccountViewModel : ViewModelBase
     {
-        public string Name => "SingletonSean";
-
-        public ICommand NavigateHomeCommand { get; }
+        public ICommand NavigatePrintCommand { get; }
 
         public AccountViewModel(NavigationStore navigationStore)
         {
-            NavigateHomeCommand = new NavigateCommand<HomeViewModel>(navigationStore, () => new HomeViewModel(navigationStore));
+            NavigatePrintCommand = new NavigateCommand<PrintViewModel>(navigationStore, () => new PrintViewModel(navigationStore));
         }
     }
 }

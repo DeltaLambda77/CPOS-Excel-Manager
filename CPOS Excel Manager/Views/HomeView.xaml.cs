@@ -1,5 +1,7 @@
-﻿using System;
+﻿using CPOS_Excel_Manager.Models;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,25 @@ namespace CPOS_Excel_Manager.Views
         public HomeView()
         {
             InitializeComponent();
+        }
+        
+
+        public void SubtractTime()
+        {
+            DateTime today = DateTime.Now;
+            TimeSpan singleDay = new TimeSpan(24, 0, 0);
+
+            DateTime yesterday = today.Subtract(singleDay);
+
+            Trace.WriteLine(yesterday);
+            Trace.WriteLine(yesterday.ToString());
+
+        }
+        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoginCredentials.loginEmail = Email_TextBox.Text;
+            LoginCredentials.loginPassword = Password_TextBox.Password;
+            SubtractTime();
         }
     }
 }
