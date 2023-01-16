@@ -1,5 +1,7 @@
-﻿using System;
+﻿using CPOS_Excel_Manager.Models;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,12 @@ namespace CPOS_Excel_Manager.Views
         public AccountView()
         {
             InitializeComponent();
+        }
+
+        private void StoreDate_Click(object sender, RoutedEventArgs e)
+        {
+            EmailDate.emailDate = Account_DatePicker.SelectedDate;
+            Trace.WriteLine(EmailDate.emailDate);
         }
     }
 }

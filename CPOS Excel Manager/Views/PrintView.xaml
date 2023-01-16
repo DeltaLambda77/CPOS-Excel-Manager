@@ -9,33 +9,24 @@
              Background="White">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
-        <TextBlock
-            Grid.Row="0"
-            FontSize="28"
-            Text="Account" />
+        <TextBlock Grid.Row ="1" Style="{StaticResource TextBlockStyle}" FontWeight="Medium" Name="TitleText">
+            CenPOS Processor 
+        </TextBlock>
 
-        <TextBlock
-            Grid.Row="1"
-            Margin="0 20 0 0"
-            Text="{Binding Username}" />
+        <TextBox  x:Name="Status_TextBox" Grid.Row="2" Width="400" IsReadOnly="True" Text="Status Box:"
+                 TextWrapping="Wrap" FontFamily="Segoe UI" FontSize="12">
+        </TextBox>
 
-        <TextBlock
-            Grid.Row="2"
-            Margin="0 20 0 0"
-            Text="{Binding Email}" />
+        <Button x:Name="PrintCPOSButton" Grid.Row="3" Style="{StaticResource ExpandGrid}" Margin="10" Width="200" FontFamily="Segoe UI" FontSize="16" FontWeight="Bold"  Foreground="White" 
+                Content="Print CenPOS Summary" Command="{Binding NavigateAccountCommand}" CommandParameter="Account"
+                Click="PrintCPOSButton_Click"/>
 
-        <Button
-            Grid.Row="3"
-            Margin="0 20 0 0"
-            Padding="5 2"
-            HorizontalAlignment="Left"
-            Command="{Binding NavigateHomeCommand}"
-            Content="Home" />
     </Grid>
 </UserControl>

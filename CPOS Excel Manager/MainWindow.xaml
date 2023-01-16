@@ -6,7 +6,7 @@
         xmlns:viewmodels="clr-namespace:CPOS_Excel_Manager.ViewModels"
         xmlns:views="clr-namespace:CPOS_Excel_Manager.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="EmailManager" Height="450" Width="800">
     <ContentControl Content="{Binding CurrentViewModel}">
         <ContentControl.Resources>
             <DataTemplate DataType="{x:Type viewmodels:HomeViewModel}">

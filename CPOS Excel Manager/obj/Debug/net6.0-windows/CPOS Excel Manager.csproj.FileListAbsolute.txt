@@ -27,3 +27,13 @@ G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-
 G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\App.baml
 G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\Views\PrintView.g.cs
 G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\Views\PrintView.baml
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\ClosedXML.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\ExcelNumberFormat.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\Irony.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\MailKit.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\MimeKit.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\SixLabors.Fonts.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\bin\Debug\net6.0-windows\XLParser.dll
+G:\Dan\Desktop\Coding\C#\CPOS Excel Manager\CPOS Excel Manager\obj\Debug\net6.0-windows\CPOS Excel Manager.csproj.CopyComplete

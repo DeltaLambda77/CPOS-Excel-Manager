@@ -20,7 +20,7 @@
         <StackPanel Grid.Row="2" Orientation="Vertical" Margin="15">
             <StackPanel Name="EmailField" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
                 <Label Width="200" Height="25">Your Outlook Email:</Label>
-                <TextBox Name="Email_TextBox" Width="200" Height="25" VerticalContentAlignment="Center" Text="{Binding Path=LoginEmail, Mode=TwoWay}"/>
+                <TextBox Name="Email_TextBox" Width="200" Height="25" VerticalContentAlignment="Center"/>
             </StackPanel>
             <StackPanel Name="PasswordField" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
                 <Label Width="200" Height="25">Your Outlook Password:</Label>

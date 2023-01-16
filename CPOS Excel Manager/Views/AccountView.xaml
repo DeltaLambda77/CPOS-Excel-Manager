@@ -20,7 +20,7 @@
             Enter the Date of the CenPOS Report:
         </TextBlock>
 
-        <DatePicker Grid.Row="2" Width="200" VerticalAlignment="Center" Height="45" Background="White"
+        <DatePicker x:Name="Account_DatePicker" Grid.Row="2" Width="200" VerticalAlignment="Center" Height="45" Background="White"
             FontSize="12" FontFamily="Segoe UI" VerticalContentAlignment="Center">
 
             <DatePicker.Resources>
@@ -35,6 +35,7 @@
 
         <Button Grid.Row="3" Style="{StaticResource ExpandGrid}" Margin="10" Width="200" 
                 FontFamily="Segoe UI" FontSize="16" FontWeight="Bold"  Foreground="White" 
-                Content="Process CenPOS Emails" Command="{Binding NavigatePrintCommand}" CommandParameter="Print"/>
+                Content="Process CenPOS Emails" Command="{Binding NavigatePrintCommand}" CommandParameter="Print"
+                Click="StoreDate_Click"/>
     </Grid>
 </UserControl>

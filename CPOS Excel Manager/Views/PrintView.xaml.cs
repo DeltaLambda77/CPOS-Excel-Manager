@@ -1,4 +1,5 @@
 ﻿using System;
+using CPOS_Excel_Manager.Services;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace CPOS_Excel_Manager.Views
         public PrintView()
         {
             InitializeComponent();
+        }
+
+        private void PrintCPOSButton_Click(object sender, RoutedEventArgs e)
+        {
+            Status_TextBox.Text = OutlookConnection.ConnectPop3Client();
+            
         }
     }
 }
